@@ -36,10 +36,12 @@ test('Shopify Homepage and Checkout visual test', async ({ page }) => {
 
   // STEP 2 — Homepage Visual Check
   await page.goto(`${STORE_URL}`);
+    await page.waitForTimeout(3000);
   await eyes.check('Homepage', Target.window());
 
   // STEP 3 — Checkout Visual Check
   await page.goto(`${STORE_URL}/checkout`);
+    await page.waitForTimeout(3000);
   await eyes.check('Checkout', Target.window());
 
   // STEP 4 — Close Eyes session
