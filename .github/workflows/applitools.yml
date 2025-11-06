@@ -22,4 +22,4 @@ jobs:
       - name: Run Visual Tests
         run: npm test
         env:
-          APPLITOOLS_API_KEY: ${{ secrets.APPLITOOLS_API_KEY }}
+          APPLITOOLS_API_KEY: ${{ secrets.tGUhfWF1VTqBgiYe68mTQD5ilFswDl97iaC7efyWfpM8110 }}
