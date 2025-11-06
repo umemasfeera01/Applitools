@@ -1,0 +1,12 @@
+{
+  "name": "applitools-visual-tests",
+  "version": "1.0.0",
+  "description": "Visual regression testing setup using Applitools for Shopify",
+  "scripts": {
+    "test": "npx playwright test"
+  },
+  "devDependencies": {
+    "@applitools/eyes-playwright": "^1.21.1",
+    "playwright": "^1.48.0"
+  }
+}
