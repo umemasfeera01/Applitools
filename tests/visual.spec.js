@@ -1,6 +1,17 @@
 import { test } from '@playwright/test';
 import { Eyes, ClassicRunner, Target } from '@applitools/eyes-playwright';
 
+const STORE_URL = "https://thapas-technical.myshopify.com/";
+const STORE_PASSWORD = 'ss';
+
+async function unlockStore(page) {
+  if (!STORE_PASSWORD) return;
+  await page.goto(`${STORE_URL}/password`);
+  await page.fill('input[name="password"]', STORE_PASSWORD);
+  await page.click('button[type="submit"]');
+  await page.waitForTimeout(5000); // ✅ updated
+}
+
 test('Shopify Homepage and Checkout visual test', async ({ page }) => {
   // Initialize Applitools
   const runner = new ClassicRunner();
