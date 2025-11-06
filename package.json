@@ -6,7 +6,8 @@
     "test": "npx playwright test"
   },
   "devDependencies": {
-    "@applitools/eyes-playwright": "^1.21.1",
+    "@applitools/eyes-playwright": "^1.41.0",
+    "@playwright/test": "^1.56.1",
     "playwright": "^1.48.0"
   }
 }
